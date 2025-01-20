@@ -1,90 +1,221 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-  }
-  
-  /* Gradient Backgrounds */
-  .bg-gradient-home {
-    background: linear-gradient(to right, #000066, #33ccff);
-    color: white;
-  }
-  
-  .bg-gradient-profile {
-    background: linear-gradient(to right, #66ff66, #009900);
-    color: white;
-  }
-  
-  .bg-gradient-error {
-    background: linear-gradient(to right, #ff6666, #cc0000);
-    color: white;
-  }
-  
-  /* Card Styles */
-  .card {
-    background: white;
-    color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  .card h1, .card h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Button Styles */
-  .button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1rem;
-    margin: 5px;
-  }
-  
-  .button:hover {
-    background: #0056b3;
-  }
-  
-  input[type="email"], input[type="text"], input[type="password"] {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 1rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(37, 11, 235);
+  /* Set background color to white */
+}
+
+.text-5xl {
+  color: #1a0da7;
+  /* Change this to your desired color */
+}
+
+.info-text {
+  color: #3021b5;
+  /* Change this to your desired color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Header with Slight Shade */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8f4e9;
+  /* Slight shade */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add slight shadow for depth */
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #082e09;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-right a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007acc;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  overflow-x: auto;
+}
+
+.banner-item {
+  flex: 1;
+  position: relative;
+}
+
+.banner-item img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Categories Section */
+.categories {
+  padding: 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.category-tags {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.category-tags a {
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.category-tags a:hover {
+  background-color: #007acc;
+  color: white;
+}
+
+/* Gradient Backgrounds for Specific Pages */
+.bg-gradient-home {
+  background: linear-gradient(to right, #d1f4d8, #76b78a);
+  color: white;
+}
+
+.bg-gradient-profile {
+  background: linear-gradient(to right, #66ff66, #009900);
+  color: white;
+}
+
+.bg-gradient-error {
+  background: linear-gradient(to right, #ff6666, #cc0000);
+  color: white;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.card h1,
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+.button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

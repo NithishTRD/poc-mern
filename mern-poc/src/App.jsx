@@ -4,10 +4,13 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
+import Header from './pages/Header';
 
 const App = () => {
   return (
+    <div className='App'>
     <Router>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -15,6 +18,7 @@ const App = () => {
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
+    </div>
   );
 };
 

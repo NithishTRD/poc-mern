@@ -11,4 +11,4 @@ router.get('/profile', protect, getUserProfile);
 router.delete('/profile', protect, deleteUser);
 router.put('/profile', protect, updateUser);
 
-module.exports = router;
+module.exports = router; 
